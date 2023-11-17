@@ -2,9 +2,7 @@ const mongoose = require("mongoose");
 const password = encodeURIComponent("3wtaN22Q992R1Dy7");
 console.log(password);
 // Connect to MongoDB
-mongoose.connect(
-  `mongodb+srv://pranay24111999:${password}@cluster0.qbptkdp.mongodb.net/chat-app`
-);
+mongoose.connect(process.env.MONGODB_URI);
 const db = mongoose.connection;
 
 // Define a chat schema
