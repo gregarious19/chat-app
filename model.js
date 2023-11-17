@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
-const password = encodeURIComponent("3wtaN22Q992R1Dy7");
 console.log(password);
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect(process.env.DATABASE_URL);
 const db = mongoose.connection;
 
 // Define a chat schema
