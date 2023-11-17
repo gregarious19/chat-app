@@ -4,10 +4,7 @@
   "description": "",
   "main": "server.js",
   "type": "commonjs",
-  "scripts": {
-    "start": "nodemon server.js",
-    "bundle": "browserify ./client/client.js -o bundle.js"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
