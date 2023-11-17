@@ -1,7 +1,13 @@
 const mongoose = require("mongoose");
-console.log(password);
+require("dotenv").config();
+
+console.log(
+  "mongodb+srv://24111999:3wtaN22Q992R1Dy7@cluster0.qbptkdp.mongodb.net/chat-app"
+);
 // Connect to MongoDB
-mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect(
+  "mongodb+srv://24111999:te67283cI4ogPl4k@cluster0.qbptkdp.mongodb.net/chat-app"
+);
 const db = mongoose.connection;
 
 // Define a chat schema
