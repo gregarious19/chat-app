@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node server.js"
+    "start": "npm install && node server.js"
   },
   "engines": {
     "node": "14.x",
